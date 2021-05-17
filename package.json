@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "rollup -c && node-sass stylesheets/main.scss public/build/main.css",
+    "build": "rollup -c && node-sass stylesheets/main.scss public/build/juancamejoalarcon.css",
     "local-dev": "rollup -c -w",
     "watch-sass": "sass --watch ./stylesheets:public/build",
     "dev": "concurrently --kill-others \"npm run local-dev\" \"npm run watch-sass\"",
-    "start": "sirv public --no-clear",
-    "compile-css": "node-sass stylesheets/main.scss stylesheets/main.css"
+    "start": "sirv public --no-clear"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
