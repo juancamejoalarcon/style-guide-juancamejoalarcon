@@ -1,10 +1,19 @@
 .style-guide {
+    max-width: 800px;
+    margin: auto;
     .border-bottom {
         border-bottom: 1px solid grey;
     }
+    .title-section {
+        color: #009688;
+        position: absolute;
+        font-size: 0.8rem;
+        left: 0;
+        top: 0;
+        margin-left: 18px;
+    }
     &__container {
         padding: 1rem;
-
     }
     &__logos {
         &__container {
@@ -16,12 +25,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            span {
-                color: #009688;
-                position: absolute;
-                margin-top: -150px;
-                font-size: 0.8rem;
-            }
+            position: relative;
         }
 
         &__first {
@@ -37,6 +41,82 @@
             img {
                 max-width: 270px;
             }
+        }
+    }
+
+    &__colors {
+        padding-top: 1rem;
+        &__container {
+            display: flex;
+            padding: 2rem;
+            position: relative;
+        }
+        &__color {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0.1rem;
+            width: 100%;
+            &__rect {
+                height: 80px;
+                width: 100%;
+            }
+            &__title {
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                color: #009688;
+                padding-top: 1rem;
+                padding-bottom: 0.5rem;
+            }
+            &__ref {
+                font-size: 0.8rem;
+                color: #009688;
+            }
+        }
+    }
+    &__fonts {
+        padding-top: 1rem;
+        &__container {
+            position: relative;
+        }
+        &__primary,
+        &__secondary {
+            padding: 1rem;
+            margin: auto;
+            max-width: 600px;
+            &__title {
+                font-size: 2rem;
+            }
+            &__desc {
+                padding-bottom: 1rem;
+            }
+            &__body-text {
+                &__paragraph {
+                    display: flex;
+                    font-size: 1rem;
+                    padding-top: 1rem;
+                    span {
+                        min-width: 100px;
+                        text-align: justify;
+                    }
+                }
+                .regular {
+                    font-weight: $font-regular;
+                }
+                .bold {
+                    font-weight: $font-bold;
+                }
+                .extrabold {
+                    font-weight: $font-extrabold;
+                }
+            }
+        }
+        &__primary {
+            font-family: $primary-font;
+        }
+        &__secondary {
+            font-family: $secondary-font;
         }
     }
 }
