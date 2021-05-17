@@ -1,1 +1,1 @@
-Demo: [link](https://juancamejoalarcon.github.io/style-guide-juancamejoalarcon/public/index.html)
+Demo: [link](https://juancamejoalarcon.github.io/style-guide-juancamejoalarcon/public/demo.html)

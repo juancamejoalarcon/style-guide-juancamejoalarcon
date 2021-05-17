@@ -117,6 +117,14 @@
         }
         &__secondary {
             font-family: $secondary-font;
+            padding-bottom: 2rem;
+        }
+        &__headlines {
+            padding: 1rem;
+            padding-top: 2rem;
+            max-width: 600px;
+            margin: auto;
+            border-top: 1px solid grey;
         }
     }
 }

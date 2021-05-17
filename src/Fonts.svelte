@@ -81,6 +81,14 @@
                     </div>
                 </div>
             </div>
+            <div class="style-guide__fonts__headlines">
+                <h1>h1 headline</h1>
+                <h2>h2 headline</h2>
+                <h3>h3 headline</h3>
+                <h4>h4 headline</h4>
+                <h5>h5 headline</h5>
+                <h6>h6 headline</h6>
+            </div>
         </div>
     </div>
 </div>
