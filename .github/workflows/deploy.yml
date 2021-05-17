@@ -15,6 +15,8 @@ jobs:
       run: npm install
     - name: Build
       run: npm run build
+    - name: Compile css
+      run: npm run compile-css
     - uses: actions/checkout@master
    
     - name: Upload file to bucket
