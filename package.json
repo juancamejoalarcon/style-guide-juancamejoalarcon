@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "rollup -c && node-sass stylesheets/main.scss public/build/juancamejoalarcon.css",
+    "build": "rollup -c && node-sass stylesheets/juancamejoalarcon.scss public/build/juancamejoalarcon.css",
     "local-dev": "rollup -c -w",
     "watch-sass": "sass --watch ./stylesheets:public/build",
     "dev": "concurrently --kill-others \"npm run local-dev\" \"npm run watch-sass\"",
