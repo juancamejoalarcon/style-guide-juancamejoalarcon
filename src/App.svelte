@@ -2,6 +2,7 @@
 	import Logos from "./Logos.svelte";
 	import Colors from "./Colors.svelte";
 	import Fonts from "./Fonts.svelte";
+	import Buttons from "./Buttons.svelte";
 </script>
 
 <main>
@@ -10,6 +11,7 @@
 			<Logos />
 			<Colors />
 			<Fonts />
+			<Buttons />
 		</div>
 	</div>
 </main>

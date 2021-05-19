@@ -1,0 +1,92 @@
+$timing        : 265ms;
+$iconColor     : #ff003c;
+$accent        : #c648c8;
+$grape         : #7b00e0;
+$orchid        : #ae31d9;
+
+@mixin transformScale($size: 1) {
+    transform: scale($size);
+    -ms-transform: scale($size);
+    -webkit-transform: scale($size);
+}
+
+
+.jca-social-icons {
+    padding: 0;
+    list-style: none;
+  
+    li {
+        display: inline-block;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+
+    }
+
+    i {
+        color: $jca-color-3;
+        position: absolute;
+        top: 18px;
+        left: 21px;
+        transition: all $timing ease-out;
+    }
+
+    a {
+        display: inline-block;
+      
+        &:before {
+            @include transformScale();
+            content: " ";
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            display: block;
+            background: white;
+            border: 2px solid $jca-color-3;
+            transition: transform $timing ease-out;
+        }
+        
+        &:hover:before {
+            transform: scale(0);
+            transition: all $timing ease-in;
+        }
+        
+        &:hover i {
+            @include transformScale(2.2);
+            color: $jca-color-3;
+            background: $jca-color-3;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all $timing ease-in;
+        }
+    }
+  
+}
+
+.medium-icons {
+    i {
+        top: 12px;
+        left: 13px;    
+        font-size: 1.4rem;
+    }
+    a {
+        &:before {
+            width: 46px;
+            height: 46px;
+        }
+    }
+}
+
+.small-icons {
+    i {
+        top: 8px;
+        left: 9px;
+        font-size: 1rem;
+    }
+    a {
+        &:before {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
