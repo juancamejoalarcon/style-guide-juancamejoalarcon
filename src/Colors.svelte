@@ -1,10 +1,10 @@
 <script>
     let colors = [
-        { title: "primary", rgb: "52,56,56", hex: "#343838" },
-        { title: "primary-b", rgb: "0,95,107", hex: "#005F6B" },
-        { title: "secondary-c", rgb: "0,140,158", hex: "#008C9E" },
-        { title: "secondary-b", rgb: "0,180,204", hex: "#00B4CC" },
-        { title: "secondary", rgb: "0,223,252", hex: "#00DFFC" },
+        { title: "primary", rgb: "110,65,255", hex: "#6e41ff" },
+        { title: "secondary", rgb: "245,249,254", hex: "#f5f9fe" },
+        { title: "primary-b", rgb: "208,208,208", hex: "#d0d0d0" },
+        { title: "secondary-c", rgb: "51,51,51", hex: "#333333" },
+        { title: "secondary-b", rgb: "102,102,102", hex: "#666666" },
     ];
 </script>
 
@@ -15,7 +15,7 @@
             {#each colors as color}
                 <div class="style-guide__colors__color">
                     <div class="style-guide__colors__color__rect" style="{`background-color: ${color.hex};`}"/>
-                    <span class="style-guide__colors__color__title">{color.title}</span>
+                    <span class="style-guide__colors__color__title"></span>
                     <span class="style-guide__colors__color__ref">{color.rgb}</span>
                     <span class="style-guide__colors__color__ref">{color.hex}</span>
                 </div>

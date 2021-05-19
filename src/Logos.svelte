@@ -1,6 +1,6 @@
 <script>
     let firstLogoUrl =
-        "https://juancamejoalarcon.s3.eu-west-3.amazonaws.com/logo-v1.svg";
+        "https://juancamejoalarcon.s3.eu-west-3.amazonaws.com/logo-v2.svg";
     let secondLogoUrl =
         "https://juancamejoalarcon.s3.eu-west-3.amazonaws.com/logo-v1.svg";
 </script>

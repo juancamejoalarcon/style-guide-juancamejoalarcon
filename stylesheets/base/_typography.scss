@@ -3,35 +3,35 @@
  */
 body {
   color: $text-color;
-  font: normal 125% / 1.4 $primary-font;
+  font: normal 125% / 1.4 $secondary-font;
 }
 
 h1 {
-	font: 700 48px/1.2 $secondary-font;
+	font: 700 48px/1.2 $primary-font;
 	margin-bottom: 10px;
 }
 
 h2 {
-	font: 700 32px/1.2 $secondary-font;
+	font: 700 32px/1.2 $primary-font;
 	margin-bottom: 10px;
 }
 
 h3 {
-	font: 700 24px/1.2 $secondary-font;
+	font: 700 24px/1.2 $primary-font;
 	margin-bottom: 10px;
 }
 
 h4 {
-	font: 700 20px/1.2 $secondary-font;
+	font: 700 20px/1.2 $primary-font;
 	margin-bottom: 10px;
 }
 
 h5 {
-	font: 500 18px/1.2 $secondary-font;
+	font: 500 18px/1.2 $primary-font;
 	margin-bottom: 10px;
 }
 
 h6 {
-	font: 500 16px/1.2 $secondary-font;
+	font: 500 16px/1.2 $primary-font;
 	text-transform: uppercase;
 }

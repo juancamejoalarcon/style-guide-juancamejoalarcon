@@ -10,7 +10,7 @@
                     AaBbCc 01234
                 </div>
                 <div class="style-guide__fonts__primary__desc">
-                    Open Sans
+                    Roboto
                 </div>
                 <div class="style-guide__fonts__primary__body-text">
                     <div class="style-guide__fonts__primary__body-text__paragraph regular">
@@ -48,7 +48,7 @@
                     AaBbCc 01234
                 </div>
                 <div class="style-guide__fonts__secondary__desc">
-                    Roboto
+                    Cabin
                 </div>
                 <div class="style-guide__fonts__primary__body-text">
                     <div class="style-guide__fonts__primary__body-text__paragraph regular">
