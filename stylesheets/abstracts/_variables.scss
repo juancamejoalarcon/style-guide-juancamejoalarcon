@@ -13,24 +13,21 @@ $secondary-font: 'Cabin', sans-serif !default;
 
 
 /// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$jca-color-1: '#6e41ff';
+$jca-color-2: '#f5f9fe';
+$jca-color-3: '#d0d0d0';
+$jca-color-4: '#333333';
+$jca-color-5: '#666666';
 
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
-
-/// Light grey
-/// @type Color
-$light-grey: rgb(237, 237, 237) !default;
-
-/// Medium grey
-/// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+:root {
+	--primary-font: $primary-font;
+	--primary-font: $secondary-font;
+  --jca-color-1: $jca-color-1;
+  --jca-color-2: $jca-color-2;
+  --jca-color-3: $jca-color-3;
+  --jca-color-4: $jca-color-4;
+  --jca-color-5: $jca-color-5;
+}
 
 
 /// Font-size
