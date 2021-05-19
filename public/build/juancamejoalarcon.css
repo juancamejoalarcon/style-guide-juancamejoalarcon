@@ -530,7 +530,7 @@ h6 {
   border-radius: 100%;
   display: block;
   background: white;
-  border: 2px solid #d0d0d0;
+  border: 1px solid #d0d0d0;
   transition: transform 265ms ease-out;
 }
 .jca-social-icons a:hover:before {
