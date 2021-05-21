@@ -5,6 +5,7 @@
 	import Buttons from "./Buttons.svelte";
 	import CSS from "./CSS.svelte";
 	import Timeline from "./Timeline.svelte";
+	import Cards from "./Cards.svelte";
 </script>
 
 <main>
@@ -14,6 +15,7 @@
 			<Colors />
 			<Fonts />
 			<Buttons />
+			<Cards />
 			<Timeline />
 			<!-- <CSS /> -->
 		</div>

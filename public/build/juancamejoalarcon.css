@@ -1061,6 +1061,65 @@ h6 {
   left: 0;
 }
 
+.card {
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s;
+  border: 1px solid #d0d0d0;
+}
+.card:hover {
+  box-shadow: 0px 25px 40px 0px rgba(51, 51, 51, 0.1);
+  transform: translateY(-5px);
+}
+.card__thumb {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.card__thumb img {
+  width: 100%;
+}
+.card__thumb__date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 12px 12px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-transform: uppercase;
+  z-index: 9;
+  font-size: 1rem;
+}
+.card__thumb__date:hover {
+  color: #ffffff;
+}
+.card__content {
+  background-color: #ffffff;
+  padding: 20px 14px;
+  text-align: left;
+}
+.card__content h4 {
+  font-size: 18px;
+  line-height: 1;
+}
+.card__content a {
+  color: #333333;
+}
+.card__content p {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.card__content__read-more {
+  font-weight: 700;
+  color: #333333;
+  font-size: 16px;
+}
+
 .jca-button {
   outline: none;
   width: 100%;
@@ -1264,6 +1323,16 @@ h6 {
 }
 .style-guide__timeline .title-section {
   margin-top: 20px;
+}
+.style-guide__cards {
+  padding: 3rem 0rem;
+  position: relative;
+}
+.style-guide__cards .title-section {
+  margin-top: 20px;
+}
+.style-guide__cards__container {
+  display: flex;
 }
 
 /*# sourceMappingURL=juancamejoalarcon.css.map */
