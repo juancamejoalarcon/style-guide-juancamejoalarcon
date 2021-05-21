@@ -6,7 +6,7 @@
         <span class="title-section">CARDS</span>
         <div class="style-guide__cards__container">
             <div>
-                <div class="card hover-item">
+                <div class="card">
                     <div class="card__thumb">
                         <a href="blog-single.html"
                             ><img
