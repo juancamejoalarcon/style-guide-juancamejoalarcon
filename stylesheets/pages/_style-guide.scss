@@ -7,6 +7,9 @@
     .border-top {
         border-top: 1px solid grey;
     }
+    .border-right {
+        border-right: 1px solid grey;
+    }
     .title-section {
         color: #009688;
         position: absolute;
@@ -134,11 +137,29 @@
     &__buttons {
         &__container {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
         &__left,
         &__right {
             position: relative;
+            .title-section {
+                padding-top: 15px;
+            }
+            &__container {
+                margin-top: 1rem;
+            }
+        }
+        &__left {
+            width: 60%;
+            &__container {
+                margin-top: 3rem;
+            }
+        }
+    }
+    &__timeline {
+        position: relative;
+        .title-section {
+            margin-top: 20px;
         }
     }
 }

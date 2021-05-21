@@ -1,3 +1,56 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.jca-button {
+	outline: none;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	border: none;
+    font-family: $secondary-font;
+    font-weight: $font-extrabold;
+	padding: 20px;
+	cursor: pointer;
+	background: $jca-color-1;
+	color: white;
+	position: relative;
+	top: 0;
+	transition: 0.2s ease;
+	&:hover,
+	&.hover {
+		top: -3px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+	}
+	&:active,
+	&.active {
+		background: $jca-color-1-dark;
+		outline: none;
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+		top: 0;
+	}
+	&.disabled {
+		opacity: 0.4;
+		user-select: none;
+		pointer-events: none;
+	}
+	&.medium {
+		padding: 15px 18px;
+		width: auto;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	&.small {
+		padding: 10px 12px;
+		width: auto;
+		font-size: 14px;
+		font-weight: 500;
+	}
+	&.secondary {
+		background: $jca-color-4;
+		&:active,
+		&.active {
+			background: $jca-color-5;
+			outline: none;
+		}
+	}
+}
