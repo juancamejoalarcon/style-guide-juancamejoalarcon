@@ -1079,6 +1079,7 @@ h6 {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   overflow: hidden;
+  background-color: white;
 }
 .card__thumb img {
   width: 100%;
@@ -1118,6 +1119,103 @@ h6 {
   font-weight: 700;
   color: #333333;
   font-size: 16px;
+}
+
+.jca-input-text {
+  --text-opacity: 1;
+  color: #333333;
+  position: relative;
+  margin: 0.25rem;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 16px;
+}
+.jca-input-text input {
+  caret-color: #6e41ff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-top: 1.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  --border-opacity: 1;
+  border-color: #333333;
+  background-color: transparent;
+  border-radius: 0px;
+}
+.jca-input-text input:focus {
+  cursor: text;
+  border-color: #6e41ff;
+}
+.jca-input-text input:focus + label {
+  height: 36px;
+  font-size: 80%;
+  line-height: 2.25rem;
+  color: #6e41ff;
+}
+.jca-input-text input:not(:placeholder-shown) + label {
+  height: 36px;
+  font-size: 80%;
+  line-height: 2.25rem;
+}
+.jca-input-text input:active {
+  border-color: #6e41ff;
+  caret-color: #6e41ff;
+}
+.jca-input-text input:active + label {
+  color: #6e41ff;
+}
+.jca-input-text label {
+  line-height: 56px;
+  transition: height 0.13s ease, line-height 0.13s ease, font-size 0.13s ease;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  pointer-events: none;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 100%;
+  --text-opacity: 1;
+  color: #333333;
+}
+
+.jca-input-text-bellow {
+  margin-top: -0.25rem;
+  margin-left: 0.25rem;
+  font-size: 0.875rem;
+  height: 1.25rem;
+}
+
+._show-error input,
+._show-error input:focus {
+  border-color: #D60900;
+  caret-color: #D60900;
+}
+._show-error label,
+._show-error input + label,
+._show-error input:focus + label, ._show-error:not(:placeholder-shown) + label {
+  color: #D60900 !important;
+}
+._show-error + .jca-input-text-bellow {
+  color: #D60900 !important;
+}
+
+._disabled {
+  color: #d0d0d0;
+}
+._disabled input,
+._disabled input:focus {
+  border-color: #d0d0d0;
+}
+._disabled input + label {
+  color: #d0d0d0;
 }
 
 .jca-button {
@@ -1333,6 +1431,23 @@ h6 {
 }
 .style-guide__cards__container {
   display: flex;
+}
+.style-guide__inputs {
+  position: relative;
+  padding-top: 0.5rem;
+}
+.style-guide__inputs .title-section {
+  position: relative;
+  margin-left: 15px;
+}
+.style-guide__inputs__container {
+  padding-top: 0.2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+.style-guide__inputs__input {
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=juancamejoalarcon.css.map */

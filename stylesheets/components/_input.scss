@@ -1,0 +1,99 @@
+.jca-input-text {
+    --text-opacity: 1;
+    color: $jca-color-4;
+    position: relative;
+    margin: 0.25rem;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 16px;
+    input {
+        caret-color: $jca-color-1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding-top: 1.25rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        cursor: pointer;
+        border-width: 1px;
+        border-style: solid;
+        --border-opacity: 1;
+        border-color: $jca-color-4;
+        background-color: transparent;
+        border-radius: 0px;
+        &:focus {
+            cursor: text;
+            border-color: $jca-color-1;
+        }
+        &:focus + label {
+            height: 36px;
+            font-size: 80%;
+            line-height: 2.25rem;
+            color: $jca-color-1;
+        }
+        &:not(:placeholder-shown) + label {
+            height: 36px;
+            font-size: 80%;
+            line-height: 2.25rem;
+        }
+        &:active {
+            border-color: $jca-color-1;
+            caret-color: $jca-color-1;
+        }
+        &:active + label {
+            color: $jca-color-1;
+        }
+    }
+    label {
+        line-height: 56px;
+        transition: height .13s ease, line-height .13s ease, font-size .13s ease;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        pointer-events: none;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        height: 100%;
+        --text-opacity: 1;
+        color: $jca-color-4;
+    }
+}
+
+.jca-input-text-bellow {
+    margin-top: -0.25rem;
+    margin-left: 0.25rem;
+    font-size: 0.875rem;
+    height: 1.25rem;
+}
+
+._show-error {
+    input,
+    input:focus {
+        border-color: $jca-color-6;
+        caret-color: $jca-color-6;
+    }
+    label,
+    input + label,
+    input:focus + label,
+    &:not(:placeholder-shown) + label {
+        color: $jca-color-6 !important;
+    }
+    & + .jca-input-text-bellow {
+        color: $jca-color-6 !important;
+    }
+}
+
+._disabled {
+    color: $jca-color-3;
+    input,
+    input:focus {
+        border-color: $jca-color-3;
+    }
+    input + label {
+        color: $jca-color-3;
+    }
+}
