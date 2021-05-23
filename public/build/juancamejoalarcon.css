@@ -1193,29 +1193,145 @@ h6 {
   height: 1.25rem;
 }
 
-._show-error input,
-._show-error input:focus {
+.jca-input-text._show-error input,
+.jca-input-text._show-error input:focus {
   border-color: #D60900;
   caret-color: #D60900;
 }
-._show-error label,
-._show-error input + label,
-._show-error input:focus + label, ._show-error:not(:placeholder-shown) + label {
+.jca-input-text._show-error label,
+.jca-input-text._show-error input + label,
+.jca-input-text._show-error input:focus + label, .jca-input-text._show-error:not(:placeholder-shown) + label {
   color: #D60900 !important;
 }
-._show-error + .jca-input-text-bellow {
+.jca-input-text._show-error + .jca-input-text-bellow {
   color: #D60900 !important;
 }
 
-._disabled {
+.jca-input-text._disabled {
   color: #d0d0d0;
 }
-._disabled input,
-._disabled input:focus {
+.jca-input-text._disabled input,
+.jca-input-text._disabled input:focus {
   border-color: #d0d0d0;
 }
-._disabled input + label {
+.jca-input-text._disabled input + label {
   color: #d0d0d0;
+}
+
+.jca-textarea {
+  display: flex;
+  flex-direction: column-reverse;
+  --text-opacity: 1;
+  color: #333333;
+  font-size: 16px;
+  position: relative;
+  height: 100%;
+  border: none;
+}
+.jca-textarea textarea {
+  border: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 100%;
+  border-width: 1px;
+  border-style: solid;
+  --border-opacity: 1;
+  border-color: #333333;
+  background-color: transparent;
+  border-radius: 0px;
+  border-top: none;
+}
+.jca-textarea textarea:focus {
+  cursor: text;
+  border-color: #6e41ff;
+}
+.jca-textarea textarea:focus + label {
+  border-color: #6e41ff;
+  color: #6e41ff;
+}
+.jca-textarea textarea:not(:placeholder-shown) {
+  border-color: #6e41ff;
+}
+.jca-textarea textarea:not(:placeholder-shown) + label {
+  border-color: #6e41ff;
+  color: #6e41ff;
+}
+.jca-textarea textarea:active {
+  border-color: #6e41ff;
+  caret-color: #6e41ff;
+}
+.jca-textarea textarea:active + label {
+  border-color: #6e41ff;
+  color: #6e41ff;
+}
+.jca-textarea label {
+  line-height: 48px;
+  transition: height 0.13s ease, line-height 0.13s ease, font-size 0.13s ease;
+  width: 100%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  --text-opacity: 1;
+  color: #333333;
+  border-width: 1px;
+  border-style: solid;
+  --border-opacity: 1;
+  border-color: #333333;
+  background-color: transparent;
+  border-radius: 0px;
+  border-bottom: none;
+}
+
+.jca-textarea-bellow {
+  margin-left: 0.25rem;
+  font-size: 0.875rem;
+  height: 1.25rem;
+}
+
+.jca-textarea._show-error textarea,
+.jca-textarea._show-error textarea:focus {
+  border-color: #D60900;
+  caret-color: #D60900;
+}
+.jca-textarea._show-error textarea + label,
+.jca-textarea._show-error textarea:focus + label {
+  border-color: #D60900;
+  color: #D60900;
+}
+.jca-textarea._show-error label,
+.jca-textarea._show-error textarea + label,
+.jca-textarea._show-error textarea:focus + label, .jca-textarea._show-error:not(:placeholder-shown) + label {
+  color: #D60900 !important;
+}
+.jca-textarea._show-error label + label,
+.jca-textarea._show-error textarea + label + label,
+.jca-textarea._show-error textarea:focus + label + label, .jca-textarea._show-error:not(:placeholder-shown) + label + label {
+  border-color: #D60900;
+  color: #D60900;
+}
+.jca-textarea._show-error + .jca-textarea-bellow {
+  color: #D60900 !important;
+}
+
+.jca-textarea._disabled {
+  color: #d0d0d0;
+}
+.jca-textarea._disabled textarea,
+.jca-textarea._disabled textarea:focus {
+  border-color: #d0d0d0;
+}
+.jca-textarea._disabled textarea + label,
+.jca-textarea._disabled textarea:focus + label {
+  border-color: #d0d0d0;
+  color: #d0d0d0;
+}
+.jca-textarea._disabled textarea + label {
+  color: #d0d0d0;
+  border-color: #d0d0d0;
 }
 
 .jca-button {
@@ -1448,6 +1564,26 @@ h6 {
 }
 .style-guide__inputs__input {
   padding: 0.5rem;
+}
+.style-guide__textareas {
+  position: relative;
+  padding-top: 0.5rem;
+}
+.style-guide__textareas .title-section {
+  position: relative;
+  margin-left: 15px;
+}
+.style-guide__textareas__container {
+  padding-top: 0.2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+.style-guide__textareas__textarea {
+  padding: 0.5rem;
+  height: 400px;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=juancamejoalarcon.css.map */

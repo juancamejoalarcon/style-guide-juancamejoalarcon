@@ -7,6 +7,7 @@
 	import Timeline from "./Timeline.svelte";
 	import Cards from "./Cards.svelte";
 	import Inputs from "./Inputs.svelte";
+	import Textarea from "./Textarea.svelte";
 </script>
 
 <main>
@@ -17,6 +18,7 @@
 			<Fonts />
 			<Buttons />
 			<Inputs />
+			<Textarea />
 			<Cards />
 			<Timeline />
 			<!-- <CSS /> -->

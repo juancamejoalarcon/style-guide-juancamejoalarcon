@@ -1,0 +1,115 @@
+
+.jca-textarea {
+    display: flex;
+    flex-direction: column-reverse;
+    --text-opacity: 1;
+    color: $jca-color-4;
+    font-size: 16px;
+    position: relative;
+    height: 100%;
+    border: none;
+    textarea {
+        border: none;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        height: 100%;
+        border-width: 1px;
+        border-style: solid;
+        --border-opacity: 1;
+        border-color: $jca-color-4;
+        background-color: transparent;
+        border-radius: 0px;
+        border-top: none;
+        &:focus {
+            cursor: text;
+            border-color: $jca-color-1;
+            & + label {
+                border-color: $jca-color-1;
+                color: $jca-color-1;
+            }
+        }
+        &:not(:placeholder-shown) {
+            border-color: $jca-color-1;
+            + label {
+                border-color: $jca-color-1;
+                color: $jca-color-1;
+            }
+        }
+        &:active {
+            border-color: $jca-color-1;
+            caret-color: $jca-color-1;
+            + label {
+                border-color: $jca-color-1;
+                color: $jca-color-1;
+            }
+        }
+    }
+    label {
+        line-height: 48px;
+        transition: height .13s ease, line-height .13s ease, font-size .13s ease;
+        width: 100%;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        --text-opacity: 1;
+        color: $jca-color-4;
+        border-width: 1px;
+        border-style: solid;
+        --border-opacity: 1;
+        border-color: $jca-color-4;
+        background-color: transparent;
+        border-radius: 0px;
+        border-bottom: none;
+    }
+}
+
+.jca-textarea-bellow {
+    margin-left: 0.25rem;
+    font-size: 0.875rem;
+    height: 1.25rem;
+}
+
+.jca-textarea._show-error {
+    textarea,
+    textarea:focus {
+        border-color: $jca-color-6;
+        caret-color: $jca-color-6;
+        + label {
+            border-color: $jca-color-6;
+            color: $jca-color-6;
+        }
+    }
+    label,
+    textarea + label,
+    textarea:focus + label,
+    &:not(:placeholder-shown) + label {
+        color: $jca-color-6 !important;
+        + label {
+            border-color: $jca-color-6;
+            color: $jca-color-6;
+        }
+    }
+    & + .jca-textarea-bellow {
+        color: $jca-color-6 !important;
+    }
+}
+
+.jca-textarea._disabled {
+    color: $jca-color-3;
+    textarea,
+    textarea:focus {
+        border-color: $jca-color-3;
+        + label {
+            border-color: $jca-color-3;
+            color: $jca-color-3;
+        }
+    }
+    textarea + label {
+        color: $jca-color-3;
+        border-color: $jca-color-3;
+    }
+}
