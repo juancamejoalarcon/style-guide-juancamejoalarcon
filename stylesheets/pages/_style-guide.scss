@@ -209,4 +209,21 @@
             padding-bottom: 1rem;
         }
     }
+    &__selects {
+        position: relative;
+        padding-top: 0.5rem;
+        .title-section {
+            position: relative;
+            margin-left: 15px;
+        }
+        &__container {
+            padding-top: 0.2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            padding-bottom: 2rem;
+        }
+        &__select {
+            padding: 0.5rem;
+        }
+    }
 }

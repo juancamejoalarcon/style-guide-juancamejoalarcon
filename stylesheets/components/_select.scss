@@ -1,0 +1,25 @@
+
+.jca-select {
+    --text-opacity: 1;
+    color: $jca-color-4;
+    position: relative;
+    margin: 0.25rem;
+    height: 3.5rem;
+    font-size: 16px;
+    label {
+        height: 26px;
+    }
+    select {
+        width: 100%;
+        height: 100%;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        cursor: pointer;
+        border-width: 1px;
+        border-style: solid;
+        --border-opacity: 1;
+        border-color: $jca-color-4;
+        border-radius: 0;
+    }
+}
+

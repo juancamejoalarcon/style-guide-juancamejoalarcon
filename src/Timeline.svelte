@@ -9,7 +9,7 @@
                 <div class="jca-timeline__element">
                     <div class="jca-timeline__element__inner">
                         <span class="year">2014-2015</span>
-                        <h4>Senior Javascript Developer</h4>
+                        <h4>Experience 1</h4>
                         <p>
                             Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor
                             invidunt.
@@ -19,7 +19,7 @@
                 <div class="jca-timeline__element">
                     <div class="jca-timeline__element__inner">
                         <span class="year">2014-2015</span>
-                        <h4>Senior WordPress Developer</h4>
+                        <h4>Experience 2</h4>
                         <p>
                             Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor
                             invidunt.
@@ -29,7 +29,7 @@
                 <div class="jca-timeline__element">
                     <div class="jca-timeline__element__inner">
                         <span class="year">2014-2015</span>
-                        <h4>UI/UX Designer</h4>
+                        <h4>Experience 3</h4>
                         <p>
                             Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor
                             invidunt.
@@ -39,7 +39,7 @@
                 <div class="jca-timeline__element">
                     <div class="jca-timeline__element__inner">
                         <span class="year">2014-2015</span>
-                        <h4>Freelancer And Themeforest</h4>
+                        <h4>Experience 4</h4>
                         <p>
                             Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor
                             invidunt.

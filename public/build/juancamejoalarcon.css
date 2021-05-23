@@ -1227,6 +1227,7 @@ h6 {
   position: relative;
   height: 100%;
   border: none;
+  margin: 0.25rem;
 }
 .jca-textarea textarea {
   border: none;
@@ -1332,6 +1333,30 @@ h6 {
 .jca-textarea._disabled textarea + label {
   color: #d0d0d0;
   border-color: #d0d0d0;
+}
+
+.jca-select {
+  --text-opacity: 1;
+  color: #333333;
+  position: relative;
+  margin: 0.25rem;
+  height: 3.5rem;
+  font-size: 16px;
+}
+.jca-select label {
+  height: 26px;
+}
+.jca-select select {
+  width: 100%;
+  height: 100%;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  --border-opacity: 1;
+  border-color: #333333;
+  border-radius: 0;
 }
 
 .jca-button {
@@ -1584,6 +1609,23 @@ h6 {
   height: 400px;
   padding: 0.5rem;
   padding-bottom: 1rem;
+}
+.style-guide__selects {
+  position: relative;
+  padding-top: 0.5rem;
+}
+.style-guide__selects .title-section {
+  position: relative;
+  margin-left: 15px;
+}
+.style-guide__selects__container {
+  padding-top: 0.2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+.style-guide__selects__select {
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=juancamejoalarcon.css.map */
