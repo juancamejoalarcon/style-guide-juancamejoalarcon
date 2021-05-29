@@ -56,7 +56,8 @@
 }
 
 a.jca-button {
-	&:hover {
+	&:hover,
+	&:focus {
 		text-decoration: none;
 		color: white;
 	}
