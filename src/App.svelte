@@ -3,7 +3,6 @@
 	import Colors from "./Colors.svelte";
 	import Fonts from "./Fonts.svelte";
 	import Buttons from "./Buttons.svelte";
-	import CSS from "./CSS.svelte";
 	import Timeline from "./Timeline.svelte";
 	import Cards from "./Cards.svelte";
 	import Inputs from "./Inputs.svelte";
@@ -23,7 +22,6 @@
 			<Select />
 			<Cards />
 			<Timeline />
-			<!-- <CSS /> -->
 		</div>
 	</div>
 </main>

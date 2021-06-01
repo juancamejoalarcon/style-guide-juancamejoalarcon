@@ -30,6 +30,6 @@ npm run dev
 ```
 
 ### Deploy
-`.github/workflows/deploy.yml` is in charge of the deployment of the SASS compiled file to AWS S3
+`.github/workflows/deploy.yml` is in charge of the deployment of the SASS compiled file to AWS S3 
 
 
